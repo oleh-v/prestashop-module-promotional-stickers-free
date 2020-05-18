@@ -23,7 +23,7 @@ Sticker on the cover product image will tell to the customers the important info
 ## Video overview
 [![PromoStickers for PrestaShop](video-overview.jpg)](https://www.youtube.com/watch?v=5qP3D5UGNdI)
 
-<a href="https://www.youtube.com/watch?v=5qP3D5UGNdI" target="_blank"><img align="center" width="640" src="video-overview.jpg"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=5qP3D5UGNdI"><img align="center" width="640" src="video-overview.jpg"></a>
 
 ## Screenshots
 ![PromoStickers for PrestaShop - product page](https://tobiksoft.com/131-thickbox_default/promotional-stickers-free-module-for-prestashop.jpg)
