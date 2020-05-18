@@ -20,11 +20,10 @@ Sticker on the cover product image will tell to the customers the important info
 1.  Clone repository. Move `promostickers` directory to `module` dir.
 3.  In your store's administration interface click on the "Modules" tab in the menu, find "Promotional Stickers" module, click "Install" and "Configure" then.
 
-
 ## Video overview
 [![PromoStickers for PrestaShop](video-overview.jpg)](https://www.youtube.com/watch?v=5qP3D5UGNdI)
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/5qP3D5UGNdI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<a href="https://www.youtube.com/watch?v=5qP3D5UGNdI" target="_blank"><img align="center" width="640" src="video-overview.jpg"></a>
 
 ## Screenshots
 ![PromoStickers for PrestaShop - product page](https://tobiksoft.com/131-thickbox_default/promotional-stickers-free-module-for-prestashop.jpg)
