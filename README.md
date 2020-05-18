@@ -3,7 +3,7 @@
 Free module Promotional Stickers allows you to promote products by adding sticker on product cover image. Individual Sticker settings for each product. With the help of stickers you can pay attention of buyers to the promotional items.
 
 <p align="center">
-<img align="center" src="promostickers/views/img/Sale-Label1-Red-Right.png">
+<img align="center" height="80" src="promostickers/views/img/Sale-Label1-Red-Right.png">
 </p>
 
 ## Main Features
@@ -23,6 +23,8 @@ Sticker on the cover product image will tell to the customers the important info
 
 ## Video overview
 [![PromoStickers for PrestaShop](video-overview.jpg)](https://www.youtube.com/watch?v=5qP3D5UGNdI)
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/5qP3D5UGNdI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Screenshots
 ![PromoStickers for PrestaShop - product page](https://tobiksoft.com/131-thickbox_default/promotional-stickers-free-module-for-prestashop.jpg)
