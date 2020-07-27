@@ -1358,7 +1358,7 @@ class Promostickers extends Module
         if (!list($imageWidth, $imageHeight, $type) = @getimagesize($imagepath)) {
             return false;
         }
-        // Create Image
+
         $image = ImageManager::create($type, $imagepath);
         if (!$image) {
             return false;
@@ -1373,7 +1373,6 @@ class Promostickers extends Module
             return false;
         }
 
-        // RATIO
         if ($imageWidth < $imageHeight) {
             $new_width = $imageWidth / $promo_ratio;
             $new_height = $new_width;
@@ -1385,7 +1384,6 @@ class Promostickers extends Module
             $new_height = $imageHeight / $promo_ratio;
         }
 
-        // Resize Stamp
         $newImg = imagecreatetruecolor($new_width, $new_height);
         imagealphablending($newImg, false);
         imagesavealpha($newImg, true);
@@ -1419,7 +1417,6 @@ class Promostickers extends Module
             $promo_txt_stamp_font   = dirname(__FILE__).DIRECTORY_SEPARATOR.'views'.DIRECTORY_SEPARATOR
                 .'fonts'.DIRECTORY_SEPARATOR.$sticker_data[0]['promo_txt_font'];
 
-            // 	shadow
             if ($sticker_data[0]['promo_txt_shadow'] == 1) {
                 $promo_txt_grey_color  = imagecolorallocate($image, 118, 128, 128); //grey color
 
@@ -1432,10 +1429,9 @@ class Promostickers extends Module
                     $promo_txt_grey_color,
                     $promo_txt_stamp_font,
                     $sticker_data[0]['promo_txt']
-                ); // adding shadow
+                ); 
             }
 
-            // adding the text
             list($color_r, $color_g, $color_b) = sscanf($sticker_data[0]['promo_txt_color'], "#%02x%02x%02x");
 
             $promo_txt_font_color  = imagecolorallocate($image, $color_r, $color_g, $color_b); //red color
@@ -1452,12 +1448,11 @@ class Promostickers extends Module
             );
         }
 
-        // PLACE STAMP ON IMAGE
         imagecopy(
             $image,
             $imagew,
-            (imagesx($image) - imagesx($imagew)) * 1,
-            (imagesy($image) - imagesy($imagew)) * 0.5,
+            (imagesx($image) - imagesx($imagew)) * 0.5,
+            (imagesy($image) - imagesy($imagew)) * 1,
             0,
             0,
             imagesx($imagew),

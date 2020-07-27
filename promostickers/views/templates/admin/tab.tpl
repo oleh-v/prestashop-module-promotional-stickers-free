@@ -82,9 +82,9 @@
                     <span class="help-box" data-toggle="popover" data-content="{l s='This setting is available in the Pro Version' mod='promostickers'}"></span>
                     <span data-toggle="popover" data-content="{l s='This setting is available in the Pro Version' mod='promostickers'}">
                     <select name="promo_img_vertical" class="form-control" readonly>
-                        <option value="10">{l s='Top' mod='promostickers'}</option>
-                        <option value="50" selected >{l s='Center' mod='promostickers'}</option>
-                        <option value="100">{l s='Bottom' mod='promostickers'}</option>
+                        <option value="-1">{l s='Top' mod='promostickers'}</option>
+                        <option value="0" >{l s='Center' mod='promostickers'}</option>
+                        <option value="1" selected >{l s='Bottom' mod='promostickers'}</option>
                     </select></span>
                 </div>
 
@@ -95,9 +95,9 @@
                     <span class="help-box" data-toggle="popover" data-content="{l s='This setting is available in the Pro Version' mod='promostickers'}"></span>
                     <span data-toggle="popover" data-content="{l s='This setting is available in the Pro Version' mod='promostickers'}">
                     <select name="promo_img_horizontal" class="form-control" readonly>
-                        <option value="10">{l s='Left' mod='promostickers'}</option>
-                        <option value="50">{l s='Center' mod='promostickers'}</option>
-                        <option value="100" selected>{l s='Right' mod='promostickers'}</option>
+                        <option value="-1">{l s='Left' mod='promostickers'}</option>
+                        <option value="0" selected >{l s='Center' mod='promostickers'}</option>
+                        <option value="1">{l s='Right' mod='promostickers'}</option>
                     </select></span>
                 </div>
             </div>
