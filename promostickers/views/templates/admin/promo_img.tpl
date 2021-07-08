@@ -23,4 +23,4 @@
 * International Registered Trademark & Property of PrestaShop SA
 *}
 
-<script type="text/javascript" src="/modules/promostickers/views/js/admin/promo_img.js"></script>
+<script type="text/javascript" src="{$base_url}/modules/promostickers/views/js/admin/promo_img.js"></script>

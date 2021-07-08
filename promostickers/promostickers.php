@@ -74,7 +74,7 @@ class Promostickers extends Module
     {
         $this->name = 'promostickers';
         $this->tab = 'advertising_marketing';
-        $this->version = '1.0.3';
+        $this->version = '1.0.4';
         $this->author = 'Oleh Vasylyev';
         $this->need_instance = 0;
         $this->html = '';
@@ -414,7 +414,7 @@ class Promostickers extends Module
                 if ($html == 'html') {
                     $img[$key]['picture'] = $this->stickerImgHtml(basename($image));
                 } elseif ($html == 'url') {
-                    $img[$key]['picture'] = _PS_BASE_URL_ . __PS_BASE_URI__ . _MODULE_DIR_ . $this->name
+                    $img[$key]['picture'] = _PS_BASE_URL_ . _MODULE_DIR_ . $this->name
                         . DIRECTORY_SEPARATOR . 'views' . DIRECTORY_SEPARATOR . 'img'
                         . DIRECTORY_SEPARATOR . basename($image);
                 }
@@ -860,7 +860,7 @@ class Promostickers extends Module
      */
     public function stickerImgHtml($params)
     {
-        $html = '<img src="..' . DIRECTORY_SEPARATOR . _MODULE_DIR_ . $this->name . DIRECTORY_SEPARATOR
+        $html = '<img src="..' . DIRECTORY_SEPARATOR . 'modules' . DIRECTORY_SEPARATOR . $this->name . DIRECTORY_SEPARATOR
             . 'views' .DIRECTORY_SEPARATOR . 'img' . DIRECTORY_SEPARATOR . $params . '" height="64">';
 
         return $html;
@@ -874,7 +874,7 @@ class Promostickers extends Module
     protected function getConfigFormValues()
     {
         $config_fields = array(
-            'PROMOSTICKERS_RATIO' => Configuration::get('PROMOSTICKERS_RATIO', true),
+            'PROMOSTICKERS_RATIO' => Configuration::get('PROMOSTICKERS_RATIO'),
         );
 
         //get all images type available
